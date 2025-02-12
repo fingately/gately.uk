@@ -76,4 +76,5 @@ footer {
     font-size: 14px;
     color: #64FFDA;
     line-height: 1.6; /* Adds space between [FMG] and 2025 */
+    font-weight: bold; /* Makes footer text bold */
 }
