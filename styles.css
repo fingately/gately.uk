@@ -45,12 +45,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensure it takes up the full viewport height */
-}
-
-#hero h2 {
-    font-size: 36px;
-    color: #64FFDA;
+    flex-direction: column;
 }
 
 /* Centered Ruffle Container */
@@ -62,6 +57,7 @@ header {
     align-items: center;
     background-color: #333; /* Optional, just to visualize the container */
     border-radius: 10px; /* Optional, rounded corners */
+    margin: 0 auto; /* Ensures the container is centered horizontally */
 }
 
 /* Gallery */
