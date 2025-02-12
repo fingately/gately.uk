@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gately.uk</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/@rufflejs/ruffle"></script> <!-- Ruffle script -->
 </head>
 <body>
     <header>
@@ -13,30 +14,22 @@
 
     <main>
         <section id="hero">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Page</title>
-    <script src="https://unpkg.com/@rufflejs/ruffle"></script>
-</head>
-<body>
+            <!-- Embed the Flash Game using Ruffle -->
+            <ruffle-player src="bloons-tower-defense-5.swf" width="800" height="600"></ruffle-player>
+        </section>
 
-    <!-- Embed the Flash Game using Ruffle -->
-    <ruffle-player src="bloons-tower-defense-5.swf" width="800" height="600"></ruffle-player>
-
-</body>
         <section id="gallery">
-            <h2></h2>
+            <h2>Gallery</h2>
             <div class="image-grid">
                 <img src="beesechurger.jpg" alt="Beesechurger 1">
-                <img src="beesechurger.jpg" alt="Beesechurger 1">
+                <img src="beesechurger.jpg" alt="Beesechurger 2">
             </div>
         </section>
     </main>
 
     <footer>
-     <B>   <p>[FMG]</p>
-        <p>2025</p> </B>
+        <b><p>[FMG]</p>
+        <p>2025</p></b>
     </footer>
 </body>
 </html>
