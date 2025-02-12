@@ -14,14 +14,20 @@
 
     <main>
         <section id="hero">
-            <div id="ruffle-container"></div>
+            <!-- This div will contain the Ruffle player -->
+            <div id="ruffle-container" style="width:800px; height:600px;"></div>
             <script type="text/javascript">
                 window.onload = function() {
-                    var ruffle = window.RufflePlayer.newest();
-                    var container = document.getElementById('ruffle-container');
-                    var player = ruffle.createPlayer();
-                    container.appendChild(player);
-                    player.load('papaspizzeria_v2.swf'); // Path to your SWF file
+                    // Check if Ruffle is loaded
+                    if (window.RufflePlayer) {
+                        var ruffle = window.RufflePlayer.newest();
+                        var container = document.getElementById('ruffle-container');
+                        var player = ruffle.createPlayer();
+                        container.appendChild(player);
+                        player.load('papaspizzeria_v2.swf'); // Path to your SWF file
+                    } else {
+                        alert("Ruffle Player failed to load.");
+                    }
                 }
             </script>
         </section>
