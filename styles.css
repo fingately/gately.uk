@@ -1,11 +1,11 @@
-/* Reset some default spacing */
+/* Reset default spacing and set box-sizing */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* Ensure full height and centered content */
+/* Ensure full height and proper layout */
 html, body {
     height: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -14,6 +14,7 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-start; /* Start from the top */
     text-align: center;
 }
 
@@ -23,7 +24,7 @@ header {
     padding: 20px;
     font-size: 32px;
     color: #64FFDA; /* Cyan Accent */
-    width: 100%; /* Make the header span across the full width */
+    width: 100%; /* Full width header */
     text-align: center;
 }
 
@@ -33,10 +34,10 @@ header {
     background-color: #112240;
     color: #64FFDA;
     border-radius: 10px;
-    width: 90%;  /* Keep it slightly smaller than full width */
+    width: 90%;  /* Slightly narrower than full width */
     max-width: 900px;
-    margin: 20px 0; /* Space between sections */
-    flex-grow: 1; /* Allow the game section to take up available space */
+    margin-top: 40px; /* Space between sections */
+    margin-bottom: 40px; /* Space after game section */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -52,8 +53,8 @@ header {
     width: 800px;
     height: 600px;
     background-color: #333; /* Optional, just to visualize the container */
-    border-radius: 10px; /* Optional, rounded corners */
-    margin-top: 20px; /* Space between header and the game container */
+    border-radius: 10px;
+    margin-top: 20px; /* Space between header and game container */
 }
 
 /* Gallery Section */
@@ -61,10 +62,10 @@ header {
     padding: 40px 20px;
     background-color: #112240;
     color: #64FFDA;
-    width: 90%;  /* Ensure gallery is centered */
+    width: 90%;  /* Center gallery section */
     max-width: 900px;
-    margin: 20px 0; /* Space between sections */
-    flex-grow: 1; /* Allow the gallery section to take up available space */
+    margin-top: 40px; /* Space between sections */
+    margin-bottom: 40px; /* Space after gallery section */
 }
 
 #gallery h2 {
@@ -101,7 +102,7 @@ footer {
     color: #64FFDA;
     line-height: 1.6;
     font-weight: bold;
-    width: 100%; /* Make the footer span across the full width */
+    width: 100%; /* Full width footer */
     text-align: center;
-    margin-top: auto; /* Ensure the footer stays at the bottom */
+    margin-top: auto; /* Keep footer at the bottom */
 }
