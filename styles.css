@@ -33,23 +33,20 @@ header {
     color: #64FFDA;
 }
 
-/* Sections */
-section {
-    padding: 50px 20px;
-    max-width: 900px;
-    margin: auto;
-}
-
 /* Gallery */
 .image-grid {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    align-items: center;
+    gap: 20px;
     flex-wrap: wrap;
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 0;
 }
 
 .image-grid img {
-    width: 250px;
+    width: 300px; /* Increased size */
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
