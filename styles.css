@@ -16,8 +16,8 @@ html, body {
 main {
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;  /* Horizontally center the content */
+    align-items: center;      /* Vertically center the content */
     text-align: center;
 }
 
@@ -43,21 +43,20 @@ header {
     background: linear-gradient(135deg, #0A192F, #112240);
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100vh;           /* Full viewport height */
 }
 
 /* Centered Ruffle Container */
 #ruffle-container {
     width: 800px;
     height: 600px;
+    background-color: #333; /* Optional, just to visualize the container */
+    border-radius: 10px; /* Optional, rounded corners */
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333; /* Optional, just to visualize the container */
-    border-radius: 10px; /* Optional, rounded corners */
-    margin: 0 auto; /* Ensures the container is centered horizontally */
 }
 
 /* Gallery */
