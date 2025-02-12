@@ -5,9 +5,21 @@
     padding: 0;
 }
 
+/* Make the page fill at least the full height of the viewport */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the main content take up all available space */
+main {
+    flex: 1;
+}
+
 /* General Styles */
 body {
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #0A192F; /* Dark Blue */
     color: #E0E0E0; /* Light Gray */
     text-align: center;
@@ -46,7 +58,7 @@ header {
 }
 
 .image-grid img {
-    width: 300px; /* Increased size */
+    width: 300px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -63,4 +75,5 @@ footer {
     background-color: #112240;
     font-size: 14px;
     color: #64FFDA;
+    line-height: 1.6; /* Adds space between [FMG] and 2025 */
 }
