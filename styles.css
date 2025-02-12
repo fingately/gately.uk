@@ -15,6 +15,10 @@ html, body {
 /* Make the main content take up all available space */
 main {
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 /* General Styles */
@@ -38,11 +42,26 @@ header {
     padding: 60px 20px;
     background: linear-gradient(135deg, #0A192F, #112240);
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure it takes up the full viewport height */
 }
 
 #hero h2 {
     font-size: 36px;
     color: #64FFDA;
+}
+
+/* Centered Ruffle Container */
+#ruffle-container {
+    width: 800px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333; /* Optional, just to visualize the container */
+    border-radius: 10px; /* Optional, rounded corners */
 }
 
 /* Gallery */
