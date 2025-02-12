@@ -14,8 +14,22 @@
 
     <main>
         <section id="hero">
-            <!-- Embed the Flash Game using Ruffle -->
-            <ruffle-player src="papaspizzeria_v2.swf" width="800" height="600"></ruffle-player>
+<iframe src="about:blank" width="800" height="600" frameborder="0">
+    <html>
+        <body>
+            <div id="ruffle-container"></div>
+            <script type="text/javascript">
+                window.onload = function() {
+                    var ruffle = window.RufflePlayer.newest();
+                    var container = document.getElementById('ruffle-container');
+                    var player = ruffle.createPlayer();
+                    container.appendChild(player);
+                    player.load('your_flash_game.swf');
+                }
+            </script>
+        </body>
+    </html>
+</iframe>
         </section>
 
         <section id="gallery">
