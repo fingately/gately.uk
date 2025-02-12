@@ -14,9 +14,6 @@
 
     <main>
         <section id="hero">
-<iframe src="about:blank" width="800" height="600" frameborder="0">
-    <html>
-        <body>
             <div id="ruffle-container"></div>
             <script type="text/javascript">
                 window.onload = function() {
@@ -24,12 +21,9 @@
                     var container = document.getElementById('ruffle-container');
                     var player = ruffle.createPlayer();
                     container.appendChild(player);
-                    player.load('papaspizzeria_v2.swf');
+                    player.load('papaspizzeria_v2.swf'); // Path to your SWF file
                 }
             </script>
-        </body>
-    </html>
-</iframe>
         </section>
 
         <section id="gallery">
@@ -37,7 +31,6 @@
             <div class="image-grid">
                 <img src="beesechurger.jpg" alt="Beesechurger 1">
                 <img src="beesechurger.jpg" alt="Beesechurger 2">
-
             </div>
         </section>
     </main>
