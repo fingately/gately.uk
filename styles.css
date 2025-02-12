@@ -13,7 +13,7 @@ html, body {
 
 /* Make the main content take up all available space */
 main {
-    padding: 20px 0; /* Adjust padding to avoid overflowing */
+    padding: 20px 0;
     text-align: center;
 }
 
@@ -43,12 +43,24 @@ header {
 }
 
 /* Centered Ruffle Container */
-#ruffle-container {
+#ruffle-container-1, #ruffle-container-2 {
     width: 800px;
     height: 600px;
     background-color: #333; /* Optional, just to visualize the container */
     border-radius: 10px; /* Optional, rounded corners */
     margin: 0 auto; /* Horizontally center the container */
+}
+
+/* Bloons Section */
+#bloons {
+    padding: 40px 20px;
+    background-color: #112240;
+    color: #64FFDA;
+}
+
+#bloons h2 {
+    font-size: 36px;
+    color: #64FFDA;
 }
 
 /* Gallery */
@@ -81,4 +93,6 @@ footer {
     background-color: #112240;
     font-size: 14px;
     color: #64FFDA;
-    line-height: 1.6; /* Adds space
+    line-height: 1.6;
+    font-weight: bold;
+}
