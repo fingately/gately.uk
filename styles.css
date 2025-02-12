@@ -5,7 +5,7 @@
     padding: 0;
 }
 
-/* Make the page fill at least the full height of the viewport */
+/* Ensure full height and centered content */
 html, body {
     height: 100%;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -23,17 +23,23 @@ header {
     padding: 20px;
     font-size: 32px;
     color: #64FFDA; /* Cyan Accent */
+    width: 100%; /* Make the header span across the full width */
+    text-align: center;
 }
 
-/* Game Sections */
+/* Game Section */
 .game-section {
     padding: 40px 20px;
     background-color: #112240;
-    margin-top: 40px;
     color: #64FFDA;
     border-radius: 10px;
-    width: 80%;  /* Ensure the games aren't too wide */
+    width: 90%;  /* Keep it slightly smaller than full width */
     max-width: 900px;
+    margin: 20px 0; /* Space between sections */
+    flex-grow: 1; /* Allow the game section to take up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .game-section h2 {
@@ -47,7 +53,7 @@ header {
     height: 600px;
     background-color: #333; /* Optional, just to visualize the container */
     border-radius: 10px; /* Optional, rounded corners */
-    margin: 0 auto;
+    margin-top: 20px; /* Space between header and the game container */
 }
 
 /* Gallery Section */
@@ -55,9 +61,10 @@ header {
     padding: 40px 20px;
     background-color: #112240;
     color: #64FFDA;
-    width: 80%;  /* Ensure gallery is centered */
+    width: 90%;  /* Ensure gallery is centered */
     max-width: 900px;
-    margin-top: 40px;
+    margin: 20px 0; /* Space between sections */
+    flex-grow: 1; /* Allow the gallery section to take up available space */
 }
 
 #gallery h2 {
@@ -65,6 +72,7 @@ header {
     margin-bottom: 20px;
 }
 
+/* Image Grid (Gallery) */
 .image-grid {
     display: flex;
     justify-content: center;
@@ -93,5 +101,7 @@ footer {
     color: #64FFDA;
     line-height: 1.6;
     font-weight: bold;
-    margin-top: auto;
+    width: 100%; /* Make the footer span across the full width */
+    text-align: center;
+    margin-top: auto; /* Ensure the footer stays at the bottom */
 }
