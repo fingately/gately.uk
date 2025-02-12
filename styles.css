@@ -1,29 +1,42 @@
+/* Reset some default spacing */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* General Styles */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0a192f; /* Dark Blue */
-    color: white;
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #0A192F; /* Dark Blue */
+    color: #E0E0E0; /* Light Gray */
     text-align: center;
 }
 
 /* Header */
 header {
+    background-color: #112240; /* Slightly lighter dark blue */
     padding: 20px;
     font-size: 24px;
-    background-color: #112240;
+    color: #64FFDA; /* Cyan Accent */
 }
 
 /* Hero Section */
 #hero {
-    padding: 50px 20px;
-    background: linear-gradient(135deg, #0a192f, #112240);
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #0A192F, #112240);
+    color: white;
+}
+
+#hero h2 {
+    font-size: 36px;
+    color: #64FFDA;
 }
 
 /* Sections */
 section {
-    padding: 40px 20px;
-    max-width: 800px;
+    padding: 50px 20px;
+    max-width: 900px;
     margin: auto;
 }
 
@@ -31,19 +44,20 @@ section {
 .image-grid {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
 }
 
 .image-grid img {
-    width: 200px;
+    width: 250px;
     height: auto;
     border-radius: 10px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .image-grid img:hover {
     transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 /* Footer */
@@ -51,4 +65,5 @@ footer {
     padding: 20px;
     background-color: #112240;
     font-size: 14px;
+    color: #64FFDA;
 }
