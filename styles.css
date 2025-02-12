@@ -50,8 +50,8 @@ header {
 
 /* Game Container */
 .game-container {
-    width: 800px;
-    height: 600px;
+    width: 1600px; /* Double the size from 800px */
+    height: 1200px; /* Double the size from 600px */
     background-color: #333; /* Optional, just to visualize the container */
     border-radius: 10px;
     margin-top: 20px; /* Space between header and game container */
