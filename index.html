@@ -13,23 +13,31 @@
     </header>
 
     <main>
-        <section id="hero">
-            <!-- First Ruffle game container -->
-            <div id="ruffle-container-1" style="width:800px; height:600px;"></div>
+        <!-- Papa's Pizzeria Section -->
+        <section id="papas-pizzeria" class="game-section">
+            <h2>Papa's Pizzeria</h2>
+            <div id="ruffle-container-1" class="game-container"></div>
             <script type="text/javascript">
                 window.onload = function() {
-                    // First game: Papa's Pizzeria
                     if (window.RufflePlayer) {
                         var ruffle = window.RufflePlayer.newest();
                         var container = document.getElementById('ruffle-container-1');
                         var player = ruffle.createPlayer();
                         container.appendChild(player);
-                        player.load('papaspizzeria_v2.swf'); // Path to your SWF file
+                        player.load('papaspizzeria/papaspizzeria_v2.swf'); // Path to your SWF file
                     } else {
                         alert("Ruffle Player failed to load.");
                     }
+                }
+            </script>
+        </section>
 
-                    // Second game: Bloons Tower Defense 5
+        <!-- Bloons Tower Defense Section -->
+        <section id="bloons" class="game-section">
+            <h2>Bloons Tower Defense 5</h2>
+            <div id="ruffle-container-2" class="game-container"></div>
+            <script type="text/javascript">
+                window.onload = function() {
                     if (window.RufflePlayer) {
                         var ruffle2 = window.RufflePlayer.newest();
                         var container2 = document.getElementById('ruffle-container-2');
@@ -43,12 +51,7 @@
             </script>
         </section>
 
-        <!-- Second game section -->
-        <section id="bloons">
-            <h2>Play Bloons Tower Defense 5</h2>
-            <div id="ruffle-container-2" style="width:800px; height:600px;"></div>
-        </section>
-
+        <!-- Gallery Section -->
         <section id="gallery">
             <h2>Gallery</h2>
             <div class="image-grid">
