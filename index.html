@@ -12,54 +12,34 @@
         <h1>gately.uk</h1>
     </header>
 
-    <main>
-        <!-- Papa's Pizzeria Section -->
-        <section id="papas-pizzeria" class="game-section">
-            <h2>Papa's Pizzeria</h2>
-            <div id="ruffle-container-1" class="game-container"></div>
-            <script type="text/javascript">
-                window.onload = function() {
-                    if (window.RufflePlayer) {
-                        var ruffle = window.RufflePlayer.newest();
-                        var container = document.getElementById('ruffle-container-1');
-                        var player = ruffle.createPlayer();
-                        container.appendChild(player);
-                        player.load('papaspizzeria/papaspizzeria_v2.swf'); // Path to your SWF file
-                    } else {
-                        alert("Ruffle Player failed to load.");
-                    }
+    <!-- Bloons Tower Defense Section -->
+    <section id="bloons">
+        <h2>Bloons Tower Defense 5</h2>
+        <div id="ruffle-container-2" class="game-container"></div>
+        <script type="text/javascript">
+            window.onload = function() {
+                if (window.RufflePlayer) {
+                    var ruffle2 = window.RufflePlayer.newest();
+                    var container2 = document.getElementById('ruffle-container-2');
+                    var player2 = ruffle2.createPlayer();
+                    container2.appendChild(player2);
+                    player2.load('bloons-tower-defense-5.swf'); // Path to your SWF file
+                } else {
+                    alert("Ruffle Player failed to load.");
                 }
-            </script>
-        </section>
+            }
+        </script>
+    </section>
 
-        <!-- Bloons Tower Defense Section -->
-        <section id="bloons" class="game-section">
-            <h2>Bloons Tower Defense 5</h2>
-            <div id="ruffle-container-2" class="game-container"></div>
-            <script type="text/javascript">
-                window.onload = function() {
-                    if (window.RufflePlayer) {
-                        var ruffle2 = window.RufflePlayer.newest();
-                        var container2 = document.getElementById('ruffle-container-2');
-                        var player2 = ruffle2.createPlayer();
-                        container2.appendChild(player2);
-                        player2.load('bloons-tower-defense-5.swf'); // Path to your SWF file
-                    } else {
-                        alert("Ruffle Player failed to load.");
-                    }
-                }
-            </script>
-        </section>
-
-        <!-- Gallery Section -->
-        <section id="gallery">
-            <h2>Gallery</h2>
-            <div class="image-grid">
-                <img src="beesechurger.jpg" alt="Beesechurger 1">
-                <img src="beesechurger.jpg" alt="Beesechurger 2">
-            </div>
-        </section>
-    </main>
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-grid">
+            <img src="beesechurger.jpg" alt="Image 1">
+            <img src="beesechurger.jpg" alt="Image 2">
+            <img src="beesechurger.jpg" alt="Image 3">
+        </div>
+    </section>
 
     <footer>
         <b><p>[FMG]</p>
