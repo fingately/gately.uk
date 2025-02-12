@@ -8,16 +8,12 @@
 /* Make the page fill at least the full height of the viewport */
 html, body {
     height: 100%;
-    display: flex;
-    flex-direction: column;
+    display: block;
 }
 
 /* Make the main content take up all available space */
 main {
-    flex: 1;
-    display: flex;
-    justify-content: center;  /* Horizontally center the content */
-    align-items: center;      /* Vertically center the content */
+    padding: 20px 0; /* Adjust padding to avoid overflowing */
     text-align: center;
 }
 
@@ -42,10 +38,8 @@ header {
     padding: 60px 20px;
     background: linear-gradient(135deg, #0A192F, #112240);
     color: white;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
-    height: 100vh;           /* Full viewport height */
+    display: block; /* Change this to block for normal flow */
+    text-align: center; /* Ensures the text is centered */
 }
 
 /* Centered Ruffle Container */
@@ -54,9 +48,7 @@ header {
     height: 600px;
     background-color: #333; /* Optional, just to visualize the container */
     border-radius: 10px; /* Optional, rounded corners */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 0 auto; /* Horizontally center the container */
 }
 
 /* Gallery */
@@ -89,6 +81,4 @@ footer {
     background-color: #112240;
     font-size: 14px;
     color: #64FFDA;
-    line-height: 1.6; /* Adds space between [FMG] and 2025 */
-    font-weight: bold; /* Makes footer text bold */
-}
+    line-height: 1.6; /* Adds space
