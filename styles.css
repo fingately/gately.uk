@@ -8,20 +8,12 @@
 /* Make the page fill at least the full height of the viewport */
 html, body {
     height: 100%;
-    display: block;
-}
-
-/* Make the main content take up all available space */
-main {
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* General Styles */
-body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: #0A192F; /* Dark Blue */
     color: #E0E0E0; /* Light Gray */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
@@ -29,50 +21,56 @@ body {
 header {
     background-color: #112240; /* Slightly lighter dark blue */
     padding: 20px;
-    font-size: 24px;
+    font-size: 32px;
     color: #64FFDA; /* Cyan Accent */
 }
 
-/* Hero Section */
-#hero {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #0A192F, #112240);
-    color: white;
-    display: block; /* Change this to block for normal flow */
-    text-align: center; /* Ensures the text is centered */
+/* Game Sections */
+.game-section {
+    padding: 40px 20px;
+    background-color: #112240;
+    margin-top: 40px;
+    color: #64FFDA;
+    border-radius: 10px;
+    width: 80%;  /* Ensure the games aren't too wide */
+    max-width: 900px;
 }
 
-/* Centered Ruffle Container */
-#ruffle-container-1, #ruffle-container-2 {
+.game-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Game Container */
+.game-container {
     width: 800px;
     height: 600px;
     background-color: #333; /* Optional, just to visualize the container */
     border-radius: 10px; /* Optional, rounded corners */
-    margin: 0 auto; /* Horizontally center the container */
+    margin: 0 auto;
 }
 
-/* Bloons Section */
-#bloons {
+/* Gallery Section */
+#gallery {
     padding: 40px 20px;
     background-color: #112240;
     color: #64FFDA;
+    width: 80%;  /* Ensure gallery is centered */
+    max-width: 900px;
+    margin-top: 40px;
 }
 
-#bloons h2 {
-    font-size: 36px;
-    color: #64FFDA;
+#gallery h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
 }
 
-/* Gallery */
 .image-grid {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
-    max-width: 900px;
-    margin: auto;
-    padding: 40px 0;
 }
 
 .image-grid img {
@@ -95,4 +93,5 @@ footer {
     color: #64FFDA;
     line-height: 1.6;
     font-weight: bold;
+    margin-top: auto;
 }
