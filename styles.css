@@ -43,12 +43,12 @@ footer {
     background-color: #003366; /* Slightly lighter blue */
     box-sizing: border-box;
     font-family: 'Helvetica-Bold', 'Arial', sans-serif; /* Ensure font is Helvetica Bold with fallbacks */
+    line-height: 1; /* Adjust line height for spacing */
 }
 
 footer p {
     margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
-    line-height: 1.2; /* Adjust line height for spacing */
 }
 
 /* Main Content Styling */
