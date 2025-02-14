@@ -45,6 +45,12 @@ footer {
     font-family: 'Helvetica-Bold', 'Arial', sans-serif; /* Ensure font is Helvetica Bold with fallbacks */
 }
 
+footer p {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    line-height: 1.2; /* Adjust line height for spacing */
+}
+
 /* Main Content Styling */
 .content {
     flex: 1; /* Pushes footer to the bottom */
