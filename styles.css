@@ -9,6 +9,7 @@
 body {
     margin: 0;
     font-family: 'Helvetica-Bold', 'Arial', sans-serif; /* Use Helvetica Bold with fallbacks */
+    font-size: 1.2em; /* Increased body text size */
     color: cyan; /* Ensure text color is cyan */
     background-color: #002244; /* Darker blue */
     display: flex;
