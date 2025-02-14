@@ -1,8 +1,15 @@
 /* General Styles */
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('Helvetica-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 body {
     margin: 0;
-    font-family: Helvetica, sans-serif;
-    color: cyan; /* Changed back to cyan */
+    font-family: 'Helvetica-Bold', 'Arial', sans-serif; /* Use Helvetica Bold with fallbacks */
+    color: cyan; /* Ensure text color is cyan */
     background-color: #002244; /* Darker blue */
     display: flex;
     flex-direction: column;
@@ -35,7 +42,7 @@ footer {
     padding: 10px 0; /* Reduced padding to remove extra space */
     background-color: #003366; /* Slightly lighter blue */
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif; /* Ensure font is Helvetica */
+    font-family: 'Helvetica-Bold', 'Arial', sans-serif; /* Ensure font is Helvetica Bold with fallbacks */
 }
 
 /* Main Content Styling */
