@@ -22,7 +22,7 @@ header {
 }
 
 header h1 {
-    font-size: 2.5em; /* Increased title size */
+    font-size: 3em; /* Increased title size */
 }
 
 /* Footer Styling */
@@ -64,6 +64,6 @@ footer {
         padding: 10px 0;
     }
     header h1 {
-        font-size: 2em;
+        font-size: 2.5em; /* Adjusted size for smaller screens */
     }
 }
