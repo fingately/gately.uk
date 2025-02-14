@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: Helvetica, sans-serif;
-    color: white; /* Improved contrast */
+    color: cyan; /* Changed back to cyan */
     background-color: #002244; /* Darker blue */
     display: flex;
     flex-direction: column;
@@ -32,9 +32,10 @@ footer {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    padding: 20px 0;
+    padding: 10px 0; /* Reduced padding to remove extra space */
     background-color: #003366; /* Slightly lighter blue */
     box-sizing: border-box;
+    font-family: Helvetica, sans-serif; /* Ensure font is Helvetica */
 }
 
 /* Main Content Styling */
