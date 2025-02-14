@@ -1,108 +1,34 @@
-/* Reset default spacing and set box-sizing */
-* {
-    box-sizing: border-box;
+/* General Styles */
+body {
     margin: 0;
-    padding: 0;
-}
-
-/* Ensure full height and proper layout */
-html, body {
-    height: 100%;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #0A192F; /* Dark Blue */
-    color: #E0E0E0; /* Light Gray */
+    font-family: Helvetica, sans-serif;
+    color: cyan;
+    background-color: #002244; /* Darker blue */
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; /* Start from the top */
+    min-height: 100vh;
     text-align: center;
 }
 
-/* Header */
+/* Header Styling */
 header {
-    background-color: #112240; /* Slightly lighter dark blue */
-    padding: 20px;
-    font-size: 32px;
-    color: #64FFDA; /* Cyan Accent */
-    width: 100%; /* Full width header */
-    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    background-color: #003366; /* Slightly lighter blue */
 }
 
-/* Game Section */
-.game-section {
-    padding: 40px 20px;
-    background-color: #112240;
-    color: #64FFDA;
-    border-radius: 10px;
-    width: 90%;  /* Slightly narrower than full width */
-    max-width: 900px;
-    margin-top: 40px; /* Space between sections */
-    margin-bottom: 40px; /* Space after game section */
+/* Main Content Styling */
+.content {
+    flex: 1; /* Pushes footer to the bottom */
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.game-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-/* Game Container */
-.game-container {
-    width: 1600px; /* Double the size from 800px */
-    height: 1200px; /* Double the size from 600px */
-    background-color: #333; /* Optional, just to visualize the container */
-    border-radius: 10px;
-    margin-top: 20px; /* Space between header and game container */
-}
-
-/* Gallery Section */
-#gallery {
-    padding: 40px 20px;
-    background-color: #112240;
-    color: #64FFDA;
-    width: 90%;  /* Center gallery section */
-    max-width: 900px;
-    margin-top: 40px; /* Space between sections */
-    margin-bottom: 40px; /* Space after gallery section */
-}
-
-#gallery h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
-}
-
-/* Image Grid (Gallery) */
-.image-grid {
-    display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    flex-wrap: wrap;
 }
 
-.image-grid img {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.image-grid img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
-}
-
-/* Footer */
+/* Footer Styling */
 footer {
-    padding: 20px;
-    background-color: #112240;
-    font-size: 14px;
-    color: #64FFDA;
-    line-height: 1.6;
-    font-weight: bold;
-    width: 100%; /* Full width footer */
-    text-align: center;
-    margin-top: auto; /* Keep footer at the bottom */
+    width: 100%;
+    padding: 20px 0;
+    background-color: #003366; /* Slightly lighter blue */
 }
