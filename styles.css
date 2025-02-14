@@ -10,11 +10,15 @@ body {
     text-align: center;
 }
 
-/* Header Styling */
-header {
-    width: 100%;
+/* Header and Footer Styling */
+header, footer {
+    display: flex;
+    justify-content: center; /* Centers the text */
+    align-items: center;
+    width: 100vw; /* Forces full viewport width */
     padding: 20px 0;
     background-color: #003366; /* Slightly lighter blue */
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
 }
 
 /* Main Content Styling */
@@ -24,11 +28,13 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 800px; /* Prevents content from stretching too wide */
+    margin: 0 auto;
 }
 
-/* Footer Styling */
-footer {
-    width: 100%;
-    padding: 20px 0;
-    background-color: #003366; /* Slightly lighter blue */
+/* Image Styling */
+.content img {
+    max-width: 100%;
+    height: auto;
+    width: 300px; /* Adjust as needed */
 }
