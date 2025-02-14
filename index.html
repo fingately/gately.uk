@@ -4,46 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gately.uk</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://unpkg.com/@ruffle-rs/ruffle@0.1.0-nightly.2025.2.12/ruffle.js"></script> <!-- Ruffle script -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to external stylesheet -->
 </head>
 <body>
+    <!-- Header Section -->
     <header>
         <h1>gately.uk</h1>
     </header>
 
-    <!-- Bloons Tower Defense Section -->
-    <section id="bloons">
-        <h2></h2>
-        <div id="ruffle-container-2" class="game-container"></div>
-        <script type="text/javascript">
-            window.onload = function() {
-                if (window.RufflePlayer) {
-                    var ruffle2 = window.RufflePlayer.newest();
-                    var container2 = document.getElementById('ruffle-container-2');
-                    var player2 = ruffle2.createPlayer();
-                    container2.appendChild(player2);
-                    player2.load('bloons-tower-defense-5.swf'); // Path to your SWF file
-                } else {
-                    alert("Ruffle Player failed to load.");
-                }
-            }
-        </script>
-    </section>
+    <!-- Main Content Section -->
+    <main class="content">
+        <p>test website</p>
+        <img src="" alt="Placeholder for future image">
+    </main>
 
-    <!-- Gallery Section -->
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <div class="image-grid">
-            <img src="beesechurger.jpg" alt="Image 1">
-            <img src="beesechurger.jpg" alt="Image 2">
-            <img src="beesechurger.jpg" alt="Image 3">
-        </div>
-    </section>
-
+    <!-- Footer Section -->
     <footer>
-        <b><p>[FMG]</p>
-        <p>2025</p></b>
+        <p>[FMG]</p>
+        <p>2025</p>
     </footer>
+</body>
+</html>
+
 </body>
 </html>
